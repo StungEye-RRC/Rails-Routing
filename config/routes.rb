@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   get 'really_long_path_name/another_part/one_more/again', to: 'demo#wally', as: 'wally'
                    # 'controller#action'
   
+  resources :cheeses # All CRUD routes will be defined.
+  
   root to: 'demo#welcome' # Named as 'root'
 end
