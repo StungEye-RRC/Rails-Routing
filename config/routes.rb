@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   # PATCH
   # DELETE
   
-  # Set up a route for a GET to /wally
-  get 'wally' => 'demo#wally'
-               # 'controller#action'
+  # Set up a route for a GET to /glutton with a name of wally.
+  get 'really_long_path_name/another_part/one_more/again', to: 'demo#wally', as: 'wally'
+                   # 'controller#action'
+  
+  root to: 'demo#welcome' # Named as 'root'
 end
